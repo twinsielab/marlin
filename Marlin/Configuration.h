@@ -23,6 +23,9 @@
 
 #define CONFIG_EXAMPLES_DIR "Creality/Ender-3/BigTreeTech SKR Mini E3 2.0" //@TINYMOD
 
+#define BOARD_CUSTOM_BUILD_FLAGS -std=gnu++14 -DHAVE_SW_SERIAL -DTONE_CHANNEL=4 -DTONE_TIMER=4
+
+
 /**
  * Configuration.h
  *
@@ -3217,7 +3220,7 @@
 // TO DO
 
 // Increase the FAN PWM frequency. Removes the PWM noise but increases heating in the FET/Arduino
-#define FAST_PWM_FAN //@TINYMOD
+// #define FAST_PWM_FAN //@TINYMOD
 
 // Use software PWM to drive the fan, as for the heaters. This uses a very low frequency
 // which is not as annoying as with the hardware PWM. On the other hand, if this frequency
