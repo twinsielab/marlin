@@ -21,11 +21,6 @@
  */
 #pragma once
 
-#define CONFIG_EXAMPLES_DIR "Creality/Ender-3/BigTreeTech SKR Mini E3 2.0" //@TINYMOD
-
-#define BOARD_CUSTOM_BUILD_FLAGS -std=gnu++14 -DHAVE_SW_SERIAL -DTONE_CHANNEL=4 -DTONE_TIMER=4
-
-
 /**
  * Configuration.h
  *
@@ -68,6 +63,9 @@
 #define STRING_CONFIG_H_AUTHOR "(TWINSIELAB, TinyMod)" // Who made the changes. //@TINYMOD
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
+#define CONFIG_EXAMPLES_DIR "Creality/Ender-3/BigTreeTech SKR Mini E3 2.0" //@TINYMOD
+#define BOARD_CUSTOM_BUILD_FLAGS -std=gnu++14 -DHAVE_SW_SERIAL -DTONE_CHANNEL=4 -DTONE_TIMER=4
+
 /**
  * *** VENDORS PLEASE READ ***
  *
@@ -81,7 +79,7 @@
 #define PINS_DEBUGGING //@TINYMOD
 #define DIRECT_PIN_CONTROL //@TINYMOD
 // Show the Marlin bootscreen on startup. ** ENABLE FOR PRODUCTION **
-#define SHOW_BOOTSCREEN
+// #define SHOW_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Bootscreen.h on startup.
 //#define SHOW_CUSTOM_BOOTSCREEN
